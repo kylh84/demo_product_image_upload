@@ -1,0 +1,11 @@
+# Ignore folder
+target/
+.idea
+uploads
+
+# Ignore all .log files
+*.log
+*.properties
+*.jar
+*.tmp
+*.class
