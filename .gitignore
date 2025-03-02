@@ -1,6 +1,19 @@
-# Ignore folder
+# Ignore IntelliJ project files
+*.iml
+.idea/
+
+# Common build folders
 target/
-.idea
+build/
+bin/
+out/
+
+# Ignore Maven build files
+maven/
+maven-wrapper.jar
+maven-wrapper.properties
+
+# Ignore uploads folder
 uploads
 
 # Ignore all .log files
