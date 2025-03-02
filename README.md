@@ -1,1 +1,1 @@
-# demo_product_image_upload
+Let's build a Java Spring Boot E-commerce Product Management Module. Here's the plan to match your requested structure (Controller, Service, Repository, Entity, DTO, Mapper). This will use Spring Data JPA with MySQL, supporting product creation and image upload, saving the image path into the database.
