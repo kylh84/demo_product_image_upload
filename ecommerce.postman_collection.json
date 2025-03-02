@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "25d8b202-7196-41e5-8655-efe47958dcd1",
+		"name": "ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8843017",
+		"_collection_link": "https://interstellar-astronaut-588767.postman.co/workspace/Team-Workspace~eb1d8f56-6f0b-434e-8450-fba6d090e2e5/collection/8843017-25d8b202-7196-41e5-8655-efe47958dcd1?action=share&source=collection_link&creator=8843017"
+	},
+	"item": [
+		{
+			"name": "Add new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Mouse",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Logitech",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": [
+								"/Users/kyle/Documents/R2S/Training/Materials/Java back-end/2_ASMs/mouse-1.png",
+								"/Users/kyle/Documents/R2S/Training/Materials/Java back-end/2_ASMs/mouse-2.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display product image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/11/images/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"11",
+						"images",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
