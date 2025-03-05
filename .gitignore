@@ -18,7 +18,7 @@ uploads
 
 # Ignore all .log files
 *.log
-*.properties
 *.jar
+*.env
 *.tmp
 *.class
